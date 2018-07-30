@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="80dp"
+android:layout_alignParentBottom="true"
+android:layout_gravity="center"
+android:layout_weight="1"
+android:background="@color/white_alpha"
+android:orientation="vertical">
+
+    <!--录像按钮-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!--时间-->
+        <TextView
+            android:id="@+id/tv_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="0:00"
+            android:textColor="@color/blue_light"
+            android:textSize="16sp"/>
+
+        <!--开始停止-->
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/selector_video_start"/>
+        <ImageView
+            android:id="@+id/use_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:src="@drawable/selector_video_finish"/>
+
+        <TextView
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="25dp"
+            android:text="@string/close"
+            android:textColor="@color/blue_light"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</LinearLayout>

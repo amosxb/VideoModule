@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VideoModule</string>
+
+    <string name="close">关闭</string>
+    <string name="video_time_hint">视频录制时间不能小于3秒</string>
+    <string name="jurisdiction_camera_refuse">摄像头权限拒绝</string>
+    <string name="jurisdiction_record_refuse">录音权限拒绝</string>
+</resources>
